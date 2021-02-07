@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Website using HTML, CSS and JQuery</title>
+    <!-- second main stylesheet -->
+    <link rel="stylesheet" href="./assets/css/second-style.css">
+  <!-- main style file -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JQuery -->
+  <script src="./assets/plugins/JQuery.js"></script>
+  <!-- lightslider css -->
+  <link rel="stylesheet" href="./assets/plugins/lightslider.css">
+  <!-- lightslider js -->
+  <script src="./assets/plugins/lightslider.js"></script>
+  <!-- fontawesome for icons -->
+  <link rel="stylesheet" href="./assets/Fonts/css/all.min.css">
+  <!-- fav icon -->
+  <link rel="shortcut icon" href="./assets/images/fav-icon.png" type="image/x-icon">
+  <!-- animate css  -->
+  <link rel="stylesheet" href="./assets/plugins/animate.min.css">
+  <!-- bootrap css  -->
+  <link rel="stylesheet" href="./assets/plugins/bootstrap.min.css">
+  <!-- owlcarousel css  -->
+  <link rel="stylesheet" href="./assets/plugins/owl.carousel.min.css">
+  <!-- bootsrap js -->
+  <script src="./assets/plugins/bootstrap.bundle.min.js"></script>
+  <body>
+  <!--Navigation Bar-->
+  <nav>
+    <!-- menu bar -->
+    <div class="navigation">
+      <a href="#" class="logo">
+        <span>Shop.</span>
+      </a>
+      <!-- menu-icon -->
+      <div class="toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Clintes</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+      <!-- right menu -->
+      <div class="right-menu">
+        <a href="javascript:void(0);" class="search">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="javascript:void(0);" class="user">
+          <i class="far fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="search-bar">
+    <div class="search-input">
+      <input type="text" placeholder="Search For Products" />
+      <a href="javascript:void(0);" class="searh-cancel">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- login and sign up form -->
+  <div class="form">
+    <!-- login -->
+    <div class="login-form">
+      <!-- cancel-btn -->
+      <a href="javascript:void(0);" class="form-cancel">
+        <i class="fas fa-times"></i>
+      </a>
+      <!-- heading -->
+      <strong>Log In</strong>
+      <form>
+        <input type="email" placeholder="Eample@gmail.com" name="email" required />
+        <input type="password" placeholder="Password" name="password" required />
+        <!-- submit -->
+        <input type="submit" value="Log In" />
+      </form>
+      <div class="form-btns">
+        <a href="#" class="forget">Forget Your Password?</a>
+        <a href="javascript:void(0);" class="create-account">Create Account</a>
+      </div>
+    </div>
+
+    <div class="sign-up-form">
+      <!-- cancel-btn -->
+      <a href="#" class="form-cancel">
+        <i class="fas fa-times"></i>
+      </a>
+      <!-- heading -->
+      <strong>Sign Up</strong>
+      <form>
+        <input type="text" placeholder="Full Name" name="fullname" required />
+        <input type="email" placeholder="Eample@gmail.com" name="email" required />
+        <input type="password" placeholder="Password" name="password" required />
+        <!-- submit -->
+        <input type="submit" value="Sign Up" />
+      </form>
+      <div class="form-btns">
+        <a href="javascript:void(0);" class="already-account">I have already an account</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- full screen slider -->
+
+  <ul id="adaptive" class="cs-hidden">
+    <li class="item-a">
+      <!-- box-1 -->
+      <div class="full-slider-box f-slider-1">
+        <div class="slider-text-container">
+          <div class="f-slider-text">
+            <span>Limited offer</span>
+            <strong>30% off<br>with <span>promo code</span></strong>
+            <a href="#" class="f-slider-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- box-2 -->
+    <li class="item-a">
+      <div class="full-slider-box f-slider-2">
+        <div class="slider-text-container">
+          <div class="f-slider-text">
+            <span>Limited offer</span>
+            <strong>30% off<br>with <span>promo code</span></strong>
+            <a href="#" class="f-slider-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- box-3 -->
+    <li class="item-a">
+      <div class="full-slider-box f-slider-3">
+        <div class="slider-text-container">
+          <div class="f-slider-text">
+            <span>Limited offer</span>
+            <strong>30% off<br>with <span>promo code</span></strong>
+            <a href="#" class="f-slider-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- features categories -->
+  <div class="feature-heading">
+    <h2>Feature Categories</h2>
+  </div>
+
+  <!-- feature-box -->
+
+  <ul id="autoWidth" class="cs-hidden">
+    <!-- 1 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_1.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+    <!-- 2 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_2.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+    <!-- 3 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_3.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+    <!-- 4 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_4.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+    <!-- 5 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_5.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+    <!-- 6 -->
+    <li class="item">
+      <div class="feature-box">
+        <a href="#">
+          <img src="./assets/images/feature_6.jpg">
+        </a>
+      </div>
+      T-Shirt
+    </li>
+  </ul>
+
+  <!-- new-arriavl -->
+  <section class="new-arrival">
+    <!-- heading -->
+    <div class="arrival-heading">
+      <strong>New Arrival</strong>
+      <p>We Provide You New Design Fashion Clothes</p>
+    </div>
+
+
+    <!-- products-conatiner -->
+    <div class="products-container">
+      <!-- produts-box-1 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-1.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-2 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-2.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+
+      <!-- produts-box-3 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-3.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-4 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-4.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-5 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-5.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-6 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-6.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-7 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-7.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+
+      <!-- produts-box-8 -->
+      <div class="products-box">
+        <!-- img -->
+        <div class="product-img">
+          <!-- add cart-icon -->
+          <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <img src="assets/images/p-8.png">
+        </div>
+        <!-- details -->
+        <div class="product-details">
+          <a href="#" class="p-name">Drawstring T-Shirt</a>
+          <span class="p-price">$22.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sale -->
+  <section class="sale">
+    <div class="sale-box">
+      <img src="./assets/images/sale-1.jpg">
+      <div class="sale-text">
+        <a href="#">
+          <span>Bag With Rose Pattern</span>
+          <span>Sale off 25%</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sale-box">
+      <img src="./assets/images/sale-2.jpg">
+      <div class="sale-text">
+        <a href="#">
+          <span>Bag With Rose Pattern</span>
+          <span>Sale off 25%</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sale-box">
+      <img src="./assets/images/sale-3.jpg">
+      <div class="sale-text">
+        <a href="#">
+          <span>Bag With Rose Pattern</span>
+          <span>Sale off 25%</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="w3l-ecommerce-main">
+    <!-- /products-->
+    <div class="ecom-contenthny py-5">
+      <div class="container py-lg-5">
+        <h3 class="hny-title mb-0 text-center">Shop With <span>Us</span></h3>
+        <p class="text-center">Handpicked Favourites just for you</p>
+        <!-- /row-->
+        <div class="ecom-products-grids row mt-lg-5 mt-3">
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2 transmitv">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-1.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-11.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                <form action="#" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="transmitv_item" value="Women Maroon Top">
+                    <input type="hidden" name="amount" value="899.99">
+                    <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                      Add to Cart
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women Maroon Top </a></h3>
+                <span class="price"><del>$975.00</del>$899.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-2.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-22.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Men's Pink Shirt">
+                        <input type="hidden" name="amount" value="599.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Men's Pink Shirt </a></h3>
+                <span class="price"><del>$775.00</del>$599.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-3.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-33.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Dark Blue Top">
+                        <input type="hidden" name="amount" value="799.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Dark Blue Top </a></h3>
+                <span class="price"><del>$875.00</del>$799.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-4.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-44.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Women Tunic">
+                        <input type="hidden" name="amount" value="399.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women Tunic </a></h3>
+                <span class="price"><del>$475.00</del>$399.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-5.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-55.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Yellow T-Shirt">
+                        <input type="hidden" name="amount" value="299.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Yellow T-Shirt</a></h3>
+                <span class="price"><del>$575.00</del>$299.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-6.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-66.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Straight Kurta">
+                        <input type="hidden" name="amount" value="699.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Straight Kurta </a></h3>
+                <span class="price"><del>$775.00</del>$699.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-7.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-77.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="White T-Shirt">
+                        <input type="hidden" name="amount" value="599.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">White T-Shirt </a></h3>
+                <span class="price"><del>$675.00</del>$599.99</span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-6 product-incfhny mt-4">
+            <div class="product-grid2">
+              <div class="product-image2">
+                <a href="#">
+                  <img class="pic-1 img-fluid" src="assets/images/shop-8.jpg">
+                  <img class="pic-2 img-fluid" src="assets/images/shop-88.jpg">
+                </a>
+                <ul class="social">
+                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+  
+                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                    </li>
+                </ul>
+                <div class="transmitv single-item">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="transmitv_item" value="Blue Sweater">
+                        <input type="hidden" name="amount" value="499.99">
+                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                          Add to Cart
+                        </button>
+                      </form>
+                    </div>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Blue Sweater</a></h3>
+                <span class="price"><del>$575.00</del>$499.99</span>
+              </div>
+            </div>
+  
+          </div>
+  
+  
+        </div>
+        <!-- //row-->
+      </div>
+    </div>
+  </section>
+
+  <!-- banner -->
+  <div class="banner-box f-slider-3">
+    <div class="banner-text-container">
+      <div class="banner-text">
+        <span>Limited offer</span>
+        <strong>30% off<br>with <span>promo code</span></strong>
+        <a href="#" class="f-slider-btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- services -->
+  <section class="services">
+    <!-- services-box -->
+    <div class="services-box">
+      <i class="fas fa-shipping-fast"></i>
+      <span>Free Shipping</span>
+      <p>Free Shipping For all US orders</p>
+    </div>
+
+    <!-- services-box -->
+    <div class="services-box">
+      <i class="fas fa-headphones-alt"></i>
+      <span>Support 24/7</span>
+      <p>We Support 24h a day</p>
+    </div>
+
+    <!-- services-box -->
+    <div class="services-box">
+      <i class="fas fa-sync"></i>
+      <span>100% Money Back</span>
+      <p>You have 30 days to Return</p>
+    </div>
+  </section>
+
+
+  <section class="w3l-wecome-content-6">
+    <!-- /content-6-section -->
+      <div class="ab-content-6-mian py-5">
+         <div class="container py-lg-5">
+            <div class="welcome-grids row">
+                <div class="col-lg-6 mb-lg-0 mb-5">
+                    <h3 class="hny-title">
+                        About Our Spry<span>Store</span></h3>
+                  <p class="my-4">Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla,
+                  gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia</p>
+                  <p class="mb-4">Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla.</p>
+                  <div class="read">
+                    <a href="#" class="read-more btn">Shop Now</a>
+                  </div>	
+                </div>
+                <div class="col-lg-6 welcome-image">
+                  <img src="assets/images/2.jpg" class="img-fluid" alt="" />
+                </div>	
+                
+              </div>	
+           
+           </div>
+         </div>
+     </section>
+     <!-- //content-6-section -->
+  
+    
+  <section class="w3l-specification-6">
+    <!-- /specification-6-->
+      <div class="specification-6-mian py-5">
+         <div class="container py-lg-5">
+            <div class="row story-6-grids text-left">
+                <div class="col-lg-5 story-gd">
+                    <img src="assets/images/left2.jpg" class="img-fluid" alt="/">
+                  </div>
+                <div class="col-lg-7 story-gd pl-lg-4">
+                  <h3 class="hny-title">What We <span>Offer</span></h3>
+                  <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi
+                    consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+                    sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe
+                    blanditiis.</p>
+        
+                  <div class="row story-info-content mt-md-5 mt-4">
+  
+                    <div class="col-md-6 story-info">
+                      <h5> <a href="#">01. Visit Store</a></h5>	
+                    <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi
+                              consequatur.</p>
+                          
+                      
+                    </div>
+                    <div class="col-md-6 story-info">
+                        <h5> <a href="#">02. Add To Cart</a></h5>	
+                        <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi
+                            consequatur.</p>
+                    </div>
+                    <div class="col-md-6 story-info">
+                        <h5> <a href="#">03. Gift Cards</a></h5>	
+                        <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi
+                            consequatur.</p>
+                    </div>
+                    <div class="col-md-6 story-info">
+                        <h5> <a href="#">04. Unique shop</a></h5>	
+                        <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi
+                            consequatur.</p>
+                    </div>
+                  </div>
+                
+                </div>
+              
+        
+        
+              </div>
+           </div>
+         </div>
+     </section>
+     <!-- //specification-6-->
+    
+  <section class="w3l-services-6">
+    <!-- /content-6-section -->
+    <div class="services-grids-6 py-5">
+      <div class="container py-lg-5">
+          <div class="row w3-icon-grid-gap1">
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-codepen" aria-hidden="true"></span>
+                <h3>Let your footwear do the talking</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-mobile" aria-hidden="true"></span>
+                <h3>Trendy celebrity collections</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-hourglass" aria-hidden="true"></span>
+                <h3>Animation</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-modx" aria-hidden="true"></span>
+                <h3>Vast collection of Sports shoes</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-bar-chart" aria-hidden="true"></span>
+                <h3>Uniquely designed collection</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            <div class="col-md-6 w3-icon-grid1">
+              <a href="#link">
+                <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+                <h3>
+                    High Quality Footwear</h3>
+                <div class="clearfix"></div>
+              </a>
+              <p>Lorem sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.</p>
+            </div>
+            
+            
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- //content-6-section -->
+  <section class="features-4">
+    <div class="features4-block py-5">
+      <div class="container py-lg-5">
+        <h6>We are the best</h6>
+        <h3 class="hny-title text-center">What We <span>Offering</span></h3>
+        
+        <div class="features4-grids text-center row mt-5">
+          <div class="col-lg-3 col-md-6 features4-grid">
+            <div class="features4-grid-inn">
+              <span class="fa fa-bullhorn icon-fea4" aria-hidden="true"></span>
+              <h5><a href="#URL">Call Us Anytime</a></h5>
+              <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+  
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 features4-grid sec-features4-grid">
+              <div class="features4-grid-inn">
+                <span class="fa fa-truck icon-fea4" aria-hidden="true"></span>
+                <h5><a href="#URL">Free Shipping</a></h5>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+    
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 features4-grid">
+                <div class="features4-grid-inn">
+                  <span class="fa fa-recycle icon-fea4" aria-hidden="true"></span>
+                  <h5><a href="#URL">Free Returns</a></h5>
+                  <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+      
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 features4-grid">
+                  <div class="features4-grid-inn">
+                    <span class="fa fa-money icon-fea4" aria-hidden="true"></span>
+                    <h5><a href="#URL">Secured Payments</a></h5>
+                    <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+        
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- features-4 -->
+  
+    <!--/team-sec-->
+    <section class="w3l-team-main">
+      <div class="team py-5">
+        <div class="container py-lg-5">
+            <h3 class="hny-title text-center">
+              Meet the  <span>Team</span></h3>
+            <div class="row team-row mt-5">
+              <div class="col-lg-4 col-sm-6 mb-lg-0 mb-4 team-wrapper position-relative">
+                <a href="#"><img src="assets/images/team1.jpg" class="team_member img-fluid" alt="Team Member"></a>
+                <div class="team_info mt-3 position-absolute">
+                  <h3><a href="#" class="team_name">Suzan Lois</a></h3>
+                  <span class="team_role">Founder & CEO</span>
+                  <ul class="team-social mt-3">
+                    <li><a href="#"><span class="fa fa-facebook icon_facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter icon_twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin icon_linkedin"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google-plus icon_google-plus"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+                <!-- end team member -->
+          
+                <div class="col-lg-4 col-sm-6 mb-lg-0 mb-4 team-wrapper position-relative">
+                  <a href="#"><img src="assets/images/team2.jpg" class="team_member img-fluid" alt="Team Member"></a>
+                  <div class="team_info mt-3 position-absolute">
+                    <h3><a href="#" class="team_name">Suzan Kin</a></h3>
+                    <span class="team_role">Designer</span>
+                    <ul class="team-social mt-3">
+                      <li><a href="#"><span class="fas fa-facebook-f icon_facebook"></span></a></li>
+                      <li><a href="#"><span class="fas fa-twitter icon_twitter"></span></a></li>
+                      <li><a href="#"><span class="fas fa-linkedin icon_linkedin"></span></a></li>
+                      <li><a href="#"><span class="fas fa-google-plus icon_google-plus"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end team member -->
+                <div class="col-lg-4 col-sm-6 team-wrapper position-relative">
+                  <a href="#"><img src="assets/images/team3.jpg" class="team_member img-fluid" alt="Team Member"></a>
+                  <div class="team_info mt-3 position-absolute">
+                    <h3><a href="#" class="team_name">Kin Lois</a></h3>
+                    <span class="team_role">Marketing</span>
+                    <ul class="team-social mt-3">
+                      <li><a href="#"><span class="far fa-facebook-f icon_facebook"></span></a></li>
+                      <li><a href="#"><span class="fas fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fas fa-linkedin icon_linkedin"></span></a></li>
+                      <li><a href="#"><span class="fas fa-google-plus icon_google-plus"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end team member -->
+          </div>
+        </div>
+    </section>
+    <!--//team-sec-->
+
+    <!-- clients -->
+    <div class="clients">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="titlepage">
+                      <h2>what say our clients</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="clients_red">
+      <div class="container">
+          <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                  <li data-target="#testimonial_slider" data-slide-to="0" class=""></li>
+                  <li data-target="#testimonial_slider" data-slide-to="1" class="active"></li>
+                  <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
+              </ul>
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                  <div class="carousel-item">
+                      <div class="testomonial_section">
+                          <div class="full center">
+                          </div>
+                          <div class="full testimonial_cont text_align_center cross_layout">
+                              <div class="cross_inner">
+                                  <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
+                                  </p>
+                                  <div class="full text_align_center margin_top_30">
+                                    <img src="./assets/images/testimonial_qoute.png">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item active">
+
+                      <div class="testomonial_section">
+                          <div class="full center">
+                          </div>
+                          <div class="full testimonial_cont text_align_center cross_layout">
+                              <div class="cross_inner">
+                                  <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
+                                  </p>
+                                  <div class="full text_align_center margin_top_30">
+                                    <img src="./assets/images/testimonial_qoute.png">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                      <div class="testomonial_section">
+                          <div class="full center">
+                          </div>
+                          <div class="full testimonial_cont text_align_center cross_layout">
+                              <div class="cross_inner">
+                                  <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
+                                  </p>
+                                  <div class="full text_align_center margin_top_30">
+                                      <img src="./assets/images/testimonial_qoute.png">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+  <!-- end clients -->
+
+  <!-- contacts -->
+ <section class="w3l-contacts-8">
+  <div class="contacts-9 section-gap py-5">
+    <div class="container py-lg-5">
+      <div class="row top-map">
+        <div class="col-lg-6 partners">
+          <div class="cont-details">
+            <h3 class="hny-title mb-0">Get in <span>touch</span></h5>
+            <p class="mb-5">We're ready to lead you into the future with Business Services</p>
+            <p class="margin-top"><span class="texthny">Call Us : </span> <a href="tel:+(21) 255 999 8899">+(21)
+                255 999 8899</a></p>
+            <p> <span class="texthny">Email : </span> <a href="mailto:matiyasem23@gmail.com">
+              matiyasem23@gmail.com</a></p>
+            <p class="margin-top"> 433 California St, Suite 300
+              San Francisco, CA 94104, USA </p>
+          </div>
+          <div class="hours">
+            <h3 class="hny-title">Working <span>Hours</span></h5>
+            <h6>Business Service:</h6>
+            <p> Monday to Friday 8.00 am - 6.00 pm</p>
+            <p> Saturday and Sunday - Closed</p>
+            <h6 class="margin-top">Customer support:</h6>
+            <p> Monday to Friday 8.00 am - 6.00 pm</p>
+            <p> Saturday 10.00 am - 4.00 pm</p>
+            <p> Sunday - Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //contacts -->
+<footer>
+  <p>&copy; 2021 <a href="#">Reflective Coding</a></p>
+</footer>
+  <!-- js file -->
+  <script src="./assets/js/script.js"></script>
+  
+  </body>
+
+</html>
